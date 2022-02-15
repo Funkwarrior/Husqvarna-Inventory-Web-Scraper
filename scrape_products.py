@@ -1,21 +1,25 @@
 #!/usr/bin/python
 from lxml import html
-from bs4 import BeautifulSoup as soup  
+from bs4 import BeautifulSoup as soup
 import requests
 
-with open('/Users/funkwarrior/Python/Husqvarna-Inventory-Web-Scraper/ex_prodcat.html', 'r') as f:
+with open('ex_prodcat.html', 'r') as f:
 
-    contents = f.read()
-    page = soup(contents, 'html.parser')
-    containers = page.findAll("div", {"class": "hui-grid__grid-lg-9"})
+    content = f.read()
+    page = soup(content, 'html.parser')
+    type = page.find("h1").text
 
-    for container in containers
-        product_name = container.h4
-        product_link = container.find("a", {"class": "hbd-link"}).get('href')
-        # prints the dataset to console
-      #  print("name: " + product_name.string() + " link: " + product_link.string())
+    products = page.find("div", {"class": "hui-grid__grid-lg-9"}).findAll("a", {"class": "hbd-link"})
+
+    for product in products:
+      if product.find('h4') is not None:
+        product_name = product.find('h4').text
+        product_link = product.get('href')
+      # prints the dataset to console
+        print("name: " + str(product_name))
+        print("link: " + str(product_link))
 
         # writes the dataset to file
     # f.write(product_name + ", " + article_number.replace(",", "|") + ", " + price + imglink +"\n")
 
-f.close()  
+f.close()
