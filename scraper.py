@@ -3,12 +3,11 @@
 from bs4 import BeautifulSoup as soup
 from lxml import html
 import requests
-
 import scrape_products as sp
 
 
 # my_url = input("Please enter the url \n >: ")
-my_url="https://www.husqvarna.com/it/motoseghe/"
+base_url="https://www.husqvarna.com/it/motoseghe/"
  # opens the connection and downloads html page from url
 headers = {
     "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
