@@ -17,7 +17,7 @@ def import_links_from_excel():
   df = pd.read_excel('urls.xlsx')
   #df = df.reset_index()
   for index, row in df.iterrows():
-      print(row[index])
+      index
 
 def scan_for_products_link(page):
   products_links = {}
@@ -40,14 +40,14 @@ f.close()
 
 def retrieve_product_info(page):
   product_name = page.find("h1").text
-  product_price = page.select(".hbd-product-aside__container  div.hui-box")
+  product_price = page.select_one(".hbd-product-aside__container div.hui-box > div > div > span:first-child").text.replace("€", "")
   #product_image = page.find("picture", {"class": "hui-picture--block"}, srcset=True).get('srcset')
- # print(product_price)
+  print(product_price)
 
 with open('ex_prod.html', 'r') as f:
   content = f.read()
   page = soup(content, 'html.parser')
- # print(retrieve_product_info(page))
+  retrieve_product_info(page)
 f.close()
 
 #product_soup = soup(requests.get("https://www.husqvarna.com/it/motoseghe/120-mark-ii/", headers=headers).text, "html.parser")
