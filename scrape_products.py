@@ -39,10 +39,14 @@ f.close()
 
 
 def retrieve_product_info(page):
-  product_name = page.find("h1").text
+  product_name = page.select_one("h1").text
   product_price = page.select_one(".hbd-product-aside__container div.hui-box > div > div > span:first-child").text.replace("€", "")
-  #product_image = page.find("picture", {"class": "hui-picture--block"}, srcset=True).get('srcset')
-  print(product_price)
+  product_image = page.select_one("source", {"class": "hui-picture--block > source"},  attrs = {'srcset' : True})
+  print(list(product_image))
+  product_image = product_image.split(',')
+  high_resolution_pair = product_image[-1].split(' ')
+  high_resolution_image_url = high_resolution_pair[1].replace("@2x", "@3x")
+  print(high_resolution_image_url)
 
 with open('ex_prod.html', 'r') as f:
   content = f.read()
