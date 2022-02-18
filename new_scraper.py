@@ -1,5 +1,5 @@
 from requests_html import HTMLSession
-import chompjs
+import ex_chompjs
 import pandas as pd
 import itertools
 
@@ -13,7 +13,7 @@ def fetch(x):
 def parseproduct(url):
     r = s.get(url)
     details = r.html.find('script[type="application/ld+json"]', first=True)
-    data = chompjs.parse_js_object(details.text)
+    data = ex_chompjs.parse_js_object(details.text)
     return data
 
 def main():
