@@ -1,5 +1,5 @@
 from requests_html import HTMLSession
-#import chompjs
+import chompjs
 import ftfy
 import pprint
 
