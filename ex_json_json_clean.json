@@ -1,0 +1,2428 @@
+{
+    "initialData": {
+        "site": {
+            "products": {
+                "get": {
+                    "__typename": "Machine",
+                    "id": "{332774FF-0C5C-4113-8EEF-C8F0EC4932EC}",
+                    "sku": "PIM96433505",
+                    "url": "/it/motoseghe/120-mark-ii/",
+                    "sharedFeatures": [
+                        {
+                            "__typename": "Feature",
+                            "id": "FEATURE687",
+                            "name": "Air Injection",
+                            "description": "Sistema di pulizia centrifuga dell'aria per un ridotto logorio e lunghi periodi di operativit\u00e0 tra una pulizia e l'altra del filtro.",
+                            "bulletText": "Minori pulizie del filtro con Air Injection",
+                            "image": {
+                                "alt": "Air Injection",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.webp?v=735e5b7eacbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.webp?v=735e5b7ef2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.webp?v=735e5b7e9be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.webp?v=735e5b7e8420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.webp?v=735e5b7ec976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.jpg?v=735e5b7e45c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.jpg?v=735e5b7e9f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.jpg?v=735e5b7eea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.jpg?v=735e5b7e82fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0052b.jpg?v=735e5b7e129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": null
+                        },
+                        {
+                            "__typename": "Feature",
+                            "id": "FEATURE1505",
+                            "name": "X-Torq\u00ae",
+                            "description": "Consumo ridotto di carburante e livelli minimi di emissioni di gas di scarico per la tua motosega, in conformit\u00e0 con le pi\u00f9 restrittive e stringenti normative mondiali sull'ambiente.",
+                            "bulletText": "Il motore X-Torq\u00ae taglia sia le emissioni che il consumo di carburante",
+                            "image": {
+                                "alt": "X-Torq",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.webp?v=559e7d57acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.webp?v=559e7d57f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.webp?v=559e7d579be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.webp?v=559e7d578420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.webp?v=559e7d57c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.jpg?v=559e7d5745c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.jpg?v=559e7d579f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.jpg?v=559e7d57ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.jpg?v=559e7d5782fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0408.jpg?v=559e7d57129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": {
+                                "link": "",
+                                "image": {
+                                    "alt": "X-TORQ",
+                                    "mediaType": "FEATURE",
+                                    "sources": [
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_SM",
+                                            "output": "WebP",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.webp?v=2e9e2a9eacbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_MD",
+                                            "output": "WebP",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.webp?v=2e9e2a9ef2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_LG",
+                                            "output": "WebP",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.webp?v=2e9e2a9e9be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XL",
+                                            "output": "WebP",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.webp?v=2e9e2a9e8420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                            "output": "WebP",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.webp?v=2e9e2a9ec976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_SM",
+                                            "output": "Jpg",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.jpg?v=2e9e2a9e45c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_MD",
+                                            "output": "Jpg",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.jpg?v=2e9e2a9e9f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_LG",
+                                            "output": "Jpg",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.jpg?v=2e9e2a9eea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XL",
+                                            "output": "Jpg",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.jpg?v=2e9e2a9e82fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XXL",
+                                            "output": "Jpg",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0038b.jpg?v=2e9e2a9e129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "__typename": "Feature",
+                            "id": "FEATURE5474276",
+                            "name": "Comando combinato aria/stop",
+                            "description": "Il comando combinato aria/stop consente avviamenti molto facili e riduce il rischio di ingolfare il motore.",
+                            "bulletText": "Intuitivo comando combinato aria/stop",
+                            "image": {
+                                "alt": "H125-0040b",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.webp?v=6e59b862acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.webp?v=6e59b862f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.webp?v=6e59b8629be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.webp?v=6e59b8628420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.webp?v=6e59b862c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.jpg?v=6e59b86245c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.jpg?v=6e59b8629f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.jpg?v=6e59b862ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.jpg?v=6e59b86282fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0040b.jpg?v=6e59b862129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": null
+                        },
+                        {
+                            "__typename": "Feature",
+                            "id": "FEATURE692",
+                            "name": "LowVib\u00ae",
+                            "description": "Efficaci ammortizzatori antivibranti assorbono le vibrazioni, salvaguardando le braccia e le mani dell'utilizzatore.",
+                            "bulletText": "LowVib\u00ae preserva mani e braccia dell'utilizzatore",
+                            "image": {
+                                "alt": "576XP, 570",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.webp?v=260f456acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.webp?v=260f456f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.webp?v=260f4569be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.webp?v=260f4568420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.webp?v=260f456c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.jpg?v=260f45645c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.jpg?v=260f4569f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.jpg?v=260f456ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.jpg?v=260f45682fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h120-0025.jpg?v=260f456129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": null
+                        },
+                        {
+                            "__typename": "Feature",
+                            "id": "PFV864P98678",
+                            "name": "Primer",
+                            "description": "Primer progettato per facili avviamenti.",
+                            "bulletText": "Primer per un facile avviamento",
+                            "image": {
+                                "alt": "455 Rancher",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.webp?v=aba4c245acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.webp?v=aba4c245f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.webp?v=aba4c2459be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.webp?v=aba4c2458420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.webp?v=aba4c245c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.jpg?v=aba4c24545c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.jpg?v=aba4c2459f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.jpg?v=aba4c245ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.jpg?v=aba4c24582fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0017b.jpg?v=aba4c245129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": null
+                        },
+                        {
+                            "__typename": "Feature",
+                            "id": "FEATURE654",
+                            "name": "Freno catena inerziale",
+                            "description": "Efficace freno catena ad attivazione inerziale.",
+                            "bulletText": "Massima sicurezza e protezione, freno catena ad attivazione inerziale",
+                            "image": {
+                                "alt": "575XP",
+                                "mediaType": "FEATURE",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.webp?v=232926ddacbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.webp?v=232926ddf2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.webp?v=232926dd9be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.webp?v=232926dd8420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.webp?v=232926ddc976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_SM",
+                                        "output": "Jpg",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.jpg?v=232926dd45c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_MD",
+                                        "output": "Jpg",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.jpg?v=232926dd9f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_LG",
+                                        "output": "Jpg",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.jpg?v=232926ddea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XL",
+                                        "output": "Jpg",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.jpg?v=232926dd82fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                    },
+                                    {
+                                        "config": "JPG_LANDSCAPE_COVER_XXL",
+                                        "output": "Jpg",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/feature/h125-0020b.jpg?v=232926dd129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                    }
+                                ]
+                            },
+                            "video": null
+                        }
+                    ],
+                    "name": {
+                        "shortName": "120 Mark II",
+                        "longName": "Motosega Husqvarna 120 Mark II",
+                        "headline": "Motosega Husqvarna 120 Mark II"
+                    },
+                    "category": {
+                        "id": "{4BE003E2-EBBB-4BBA-A642-B3F0CDCEF452}",
+                        "name": "Motoseghe",
+                        "url": "/it/motoseghe/",
+                        "description": "Scopri la nostra ampia gamma e trova la motosega perfetta per le tue esigenze.\r\nDalle motoseghe per uso privato fino alle professionali per uso intensivo, ogni macchina \u00e8 studiata per offrirti le migliori prestazioni senza scendere a compromessi in termini di manovrabilit\u00e0, efficienza e sicurezza.",
+                        "parentCategory": null,
+                        "links": []
+                    },
+                    "subCategories": [
+                        {
+                            "id": "{E9C8513E-DEE7-45E2-935F-B36B72F9026A}",
+                            "name": "Motoseghe a scoppio",
+                            "url": "/it/motoseghe/a-scoppio/",
+                            "description": "Potenza e durata senza rivali con la nostra ampia gamma di motoseghe a scoppio.\r\nIl motore X-Torq ne \u00e8 una parte importante, ma nelle motoseghe a scoppio Husqvarna c'\u00e8 ancora di pi\u00f9. Tecnologia, innovazione ed ergonomia si coniugano perfettamente per garantire risultati di cui andare fieri.\r\nCurioso di conoscere la nostra gamma?",
+                            "parentCategory": {
+                                "id": "{4BE003E2-EBBB-4BBA-A642-B3F0CDCEF452}"
+                            }
+                        }
+                    ],
+                    "articles": [
+                        {
+                            "id": "967861903",
+                            "description": {
+                                "longDescription": "14\" 3/8\" H37 SN - EU",
+                                "shortDescription": "14\" 3/8\" H37 SN - EU"
+                            },
+                            "introductionText": "Motosega a scoppio per tutti gli usi facile da usare per i privati. Grazie alle prestazioni di taglio sufficienti, rende facile il taglio della legna da ardere, l'abbattimento o la limatura leggera. Dispone della tecnologia del motore X-Torq\u00ae per basse emissioni e Air Injection che mantiene il filtro pulito. L'apparato di taglio accuratamente studiato a basso contraccolpo ne aumenta la sicurezza.",
+                            "name": {
+                                "shortName": "120 Mark II",
+                                "longName": "Motosega Husqvarna 120 Mark II",
+                                "headline": "Motosega Husqvarna 120 Mark II"
+                            },
+                            "tagline": null,
+                            "mainImage": {
+                                "aprimoId": "h110-0522",
+                                "alt": "120 Mark II",
+                                "mediaType": "STUDIO",
+                                "sources": [
+                                    {
+                                        "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                        "output": "WebP",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.webp?v=95a2d66ed5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                        "output": "WebP",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.webp?v=95a2d66ee00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                        "output": "WebP",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.webp?v=95a2d66eccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_CONTAIN_XL",
+                                        "output": "WebP",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.webp?v=95a2d66e23296ea&format=WEBP_LANDSCAPE_CONTAIN_XL"
+                                    },
+                                    {
+                                        "config": "WEBP_LANDSCAPE_CONTAIN_XXL",
+                                        "output": "WebP",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.webp?v=95a2d66ecf40f083&format=WEBP_LANDSCAPE_CONTAIN_XXL"
+                                    },
+                                    {
+                                        "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                        "output": "Png",
+                                        "height": 107,
+                                        "width": 160,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.png?v=95a2d66e4dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                    },
+                                    {
+                                        "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                        "output": "Png",
+                                        "height": 213,
+                                        "width": 320,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.png?v=95a2d66e73b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                    },
+                                    {
+                                        "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                        "output": "Png",
+                                        "height": 427,
+                                        "width": 640,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.png?v=95a2d66e5296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                    },
+                                    {
+                                        "config": "PNG_LANDSCAPE_CONTAIN_XL",
+                                        "output": "Png",
+                                        "height": 553,
+                                        "width": 830,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.png?v=95a2d66e2a66c457&format=PNG_LANDSCAPE_CONTAIN_XL"
+                                    },
+                                    {
+                                        "config": "PNG_LANDSCAPE_CONTAIN_XXL",
+                                        "output": "Png",
+                                        "height": 830,
+                                        "width": 1245,
+                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/studio/h110-0522.png?v=95a2d66e56c63f1a&format=PNG_LANDSCAPE_CONTAIN_XXL"
+                                    }
+                                ]
+                            },
+                            "studioImages": [],
+                            "otherImages": [
+                                {
+                                    "aprimoId": "h150-0442",
+                                    "alt": "Chainsaw 120 Mark II",
+                                    "mediaType": "ACTION",
+                                    "sources": [
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_SM",
+                                            "output": "WebP",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.webp?v=70531c3acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_MD",
+                                            "output": "WebP",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.webp?v=70531c3f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_LG",
+                                            "output": "WebP",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.webp?v=70531c39be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XL",
+                                            "output": "WebP",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.webp?v=70531c38420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                            "output": "WebP",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.webp?v=70531c3c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_SM",
+                                            "output": "Jpg",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.jpg?v=70531c345c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_MD",
+                                            "output": "Jpg",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.jpg?v=70531c39f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_LG",
+                                            "output": "Jpg",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.jpg?v=70531c3ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XL",
+                                            "output": "Jpg",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.jpg?v=70531c382fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XXL",
+                                            "output": "Jpg",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0442.jpg?v=70531c3129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aprimoId": "h150-0441",
+                                    "alt": "Chainsaw 120 Mark II",
+                                    "mediaType": "ACTION",
+                                    "sources": [
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_SM",
+                                            "output": "WebP",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.webp?v=28ac5d90acbea818&format=WEBP_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_MD",
+                                            "output": "WebP",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.webp?v=28ac5d90f2428bba&format=WEBP_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_LG",
+                                            "output": "WebP",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.webp?v=28ac5d909be311ba&format=WEBP_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XL",
+                                            "output": "WebP",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.webp?v=28ac5d908420370f&format=WEBP_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "WEBP_LANDSCAPE_COVER_XXL",
+                                            "output": "WebP",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.webp?v=28ac5d90c976dc72&format=WEBP_LANDSCAPE_COVER_XXL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_SM",
+                                            "output": "Jpg",
+                                            "height": 107,
+                                            "width": 160,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.jpg?v=28ac5d9045c6467f&format=JPG_LANDSCAPE_COVER_SM"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_MD",
+                                            "output": "Jpg",
+                                            "height": 213,
+                                            "width": 320,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.jpg?v=28ac5d909f337f13&format=JPG_LANDSCAPE_COVER_MD"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_LG",
+                                            "output": "Jpg",
+                                            "height": 427,
+                                            "width": 640,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.jpg?v=28ac5d90ea40b6a9&format=JPG_LANDSCAPE_COVER_LG"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XL",
+                                            "output": "Jpg",
+                                            "height": 553,
+                                            "width": 830,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.jpg?v=28ac5d9082fca34c&format=JPG_LANDSCAPE_COVER_XL"
+                                        },
+                                        {
+                                            "config": "JPG_LANDSCAPE_COVER_XXL",
+                                            "output": "Jpg",
+                                            "height": 830,
+                                            "width": 1245,
+                                            "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/chainsaws/photos/action/h150-0441.jpg?v=28ac5d90129eac73&format=JPG_LANDSCAPE_COVER_XXL"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mainVideo": null,
+                            "additionalFeatures": [],
+                            "numberFormatted": "967\u00a086\u00a019\u201103",
+                            "specificationValues": [
+                                {
+                                    "formattedValue": "16,8 m/s",
+                                    "id": "TD33_metric",
+                                    "numericValue": 16.8,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD33_metric",
+                                        "idSecondary": "TD33_imperial",
+                                        "name": "Velocit\u00e0 catena alla potenza max",
+                                        "unit": "m/s",
+                                        "unitSecondary": "piedi/sec"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "55 piedi/sec",
+                                    "id": "TD33_imperial",
+                                    "numericValue": 55.0,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD33_metric",
+                                        "idSecondary": "TD33_imperial",
+                                        "name": "Velocit\u00e0 catena alla potenza max",
+                                        "unit": "m/s",
+                                        "unitSecondary": "piedi/sec"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "1,4 kW",
+                                    "id": "TD3_metric",
+                                    "numericValue": 1.4,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD3_metric",
+                                        "idSecondary": "TD3_imperial",
+                                        "name": "Potenza resa",
+                                        "unit": "kW",
+                                        "unitSecondary": "CV"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "1,88 CV",
+                                    "id": "TD3_imperial",
+                                    "numericValue": 1.88,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD3_metric",
+                                        "idSecondary": "TD3_imperial",
+                                        "name": "Potenza resa",
+                                        "unit": "kW",
+                                        "unitSecondary": "CV"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "38,2 cm\u00b3",
+                                    "id": "TD18_metric",
+                                    "numericValue": 38.2,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "{v:##,##0.#} {u}",
+                                        "formatSecondary": "",
+                                        "id": "TD18_metric",
+                                        "idSecondary": "TD18_imperial",
+                                        "name": "Cilindrata",
+                                        "unit": "cm\u00b3",
+                                        "unitSecondary": "pollici cubi"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "2,33 pollici cubi",
+                                    "id": "TD18_imperial",
+                                    "numericValue": 2.33,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "{v:##,##0.#} {u}",
+                                        "formatSecondary": "",
+                                        "id": "TD18_metric",
+                                        "idSecondary": "TD18_imperial",
+                                        "name": "Cilindrata",
+                                        "unit": "cm\u00b3",
+                                        "unitSecondary": "pollici cubi"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "3/8\" mini",
+                                    "id": "PT1349",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": true,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "PT1349",
+                                        "idSecondary": "",
+                                        "name": "Passo",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "H37",
+                                    "id": "PT59",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "PT59",
+                                        "idSecondary": "",
+                                        "name": "Tipo catena",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "14 poll.",
+                                    "id": "ART_177",
+                                    "numericValue": 14.0,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": true,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "ART_177",
+                                        "idSecondary": "",
+                                        "name": "Lunghezza barra",
+                                        "unit": "poll.",
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "35-45 cm",
+                                    "id": "TD32_1_metric|TD32_2_metric",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "{v1}-{v2} {u1}",
+                                        "formatSecondary": "{v1}-{v2} {u1}",
+                                        "id": "TD32_1_metric|TD32_2_metric",
+                                        "idSecondary": "TD32_1_imperial|TD32_2_imperial",
+                                        "name": "Lunghezza della barra consigliata, min-max",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "14-18 in",
+                                    "id": "TD32_1_imperial|TD32_2_imperial",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "{v1}-{v2} {u1}",
+                                        "formatSecondary": "{v1}-{v2} {u1}",
+                                        "id": "TD32_1_metric|TD32_2_metric",
+                                        "idSecondary": "TD32_1_imperial|TD32_2_imperial",
+                                        "name": "Lunghezza della barra consigliata, min-max",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "4,85 kg",
+                                    "id": "TD2_metric",
+                                    "numericValue": 4.85,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": true,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD2_metric",
+                                        "idSecondary": "TD2_imperial",
+                                        "name": "Peso (gruppo di taglio escl.)",
+                                        "unit": "kg",
+                                        "unitSecondary": "libbre"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "10,7 libbre",
+                                    "id": "TD2_imperial",
+                                    "numericValue": 10.7,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": true,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD2_metric",
+                                        "idSecondary": "TD2_imperial",
+                                        "name": "Peso (gruppo di taglio escl.)",
+                                        "unit": "kg",
+                                        "unitSecondary": "libbre"
+                                    }
+                                },
+                                {
+                                    "formattedValue": "113 dB(A)",
+                                    "id": "TD35",
+                                    "numericValue": 113.0,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD35",
+                                        "idSecondary": "",
+                                        "name": "Livello di potenza acustica, garantito (LWA)",
+                                        "unit": "dB(A)",
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "100,7 dB(A)",
+                                    "id": "TD860",
+                                    "numericValue": 100.7,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD860",
+                                        "idSecondary": "",
+                                        "name": "Livello di pressione acustica all'orecchio dell'operatore",
+                                        "unit": "dB(A)",
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "2,1 m/s\u00b2",
+                                    "id": "TD862_1",
+                                    "numericValue": 2.1,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD862_1",
+                                        "idSecondary": "",
+                                        "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura anteriore",
+                                        "unit": "m/s\u00b2",
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "2,7 m/s\u00b2",
+                                    "id": "TD862_2",
+                                    "numericValue": 2.7,
+                                    "score": 1.0,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "TD862_2",
+                                        "idSecondary": "",
+                                        "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura posteriore",
+                                        "unit": "m/s\u00b2",
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "A rocchetto",
+                                    "id": "PT50",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "PT50",
+                                        "idSecondary": "",
+                                        "name": "Tipo barra (lungo)",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "Incluso",
+                                    "id": "PT55",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "PT55",
+                                        "idSecondary": "",
+                                        "name": "Ramponi",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "Benzina",
+                                    "id": "PT1000",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "PT1000",
+                                        "idSecondary": "",
+                                        "name": "Tipo carburante",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                },
+                                {
+                                    "formattedValue": "Occasional use chainsaws",
+                                    "id": "WEB_ChainsawSubGroup",
+                                    "numericValue": null,
+                                    "score": null,
+                                    "specificationDefinitions": {
+                                        "definingSpecification": false,
+                                        "format": "",
+                                        "formatSecondary": "",
+                                        "id": "WEB_ChainsawSubGroup",
+                                        "idSecondary": "",
+                                        "name": "Generic Chainsaw SubGroups",
+                                        "unit": null,
+                                        "unitSecondary": null
+                                    }
+                                }
+                            ],
+                            "fitsTo": {
+                                "skip": 0,
+                                "take": 100,
+                                "totalCount": 0,
+                                "result": []
+                            },
+                            "relatedItems": {
+                                "skip": 0,
+                                "take": 10,
+                                "totalCount": 0,
+                                "result": [
+                                    {
+                                        "__typename": "Article",
+                                        "id": "597255701",
+                                        "name": {
+                                            "shortName": "Detergente Active Clean - spray"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Active Clean",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.webp?v=dd4dd7f4d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.webp?v=dd4dd7f4e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.webp?v=dd4dd7f4ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.png?v=dd4dd7f44dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.png?v=dd4dd7f473b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-1709.png?v=dd4dd7f45296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{A546ADE8-04DE-4801-B1B8-F13B87763F34}",
+                                            "sku": "PIM97832680",
+                                            "url": "/it/olio-miscela-olio-catena/detergente-active-clean-spray/",
+                                            "category": {
+                                                "name": "Olio miscela, olio catena e detergenti"
+                                            },
+                                            "subCategories": [
+                                                {
+                                                    "name": "Olio catena e detergenti"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "580754301",
+                                        "name": {
+                                            "shortName": "Elmetto forestale - Classic"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Helmet Classic",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.webp?v=1f001568d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.webp?v=1f001568e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.webp?v=1f001568ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.png?v=1f0015684dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.png?v=1f00156873b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/helmets/photos/studio/h410-0902.png?v=1f0015685296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{D987A25E-9A05-4AC6-81D5-05EBFAC555A5}",
+                                            "sku": "PIM144623",
+                                            "url": "/it/elmetti-uso-forestale/elmetto-forestale-classic/",
+                                            "category": {
+                                                "name": "Elmetti per uso forestale"
+                                            },
+                                            "subCategories": []
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Accessory",
+                                        "id": "{01C2DDAB-9512-4149-9EE1-7EAEF4507B09}",
+                                        "sku": "PIM98880438",
+                                        "url": "/it/scarponi-stivali/scarpone-antitaglio-functional/",
+                                        "category": {
+                                            "id": "{5D193DB6-C6C1-4DB5-8849-2E22C909D77D}",
+                                            "name": "Scarponi e stivali",
+                                            "url": "/it/scarponi-stivali/",
+                                            "description": "Husqvarna dispone di una gamma completa di comode protezioni per i piedi realizzate in materiali di alta qualit\u00e0, che ti consentiranno di affrontare le numerose sfide poste dai lavori all'aperto.",
+                                            "parentCategory": null
+                                        },
+                                        "subCategories": [],
+                                        "primaryArticle": {
+                                            "__typename": "Article",
+                                            "id": "597659338",
+                                            "name": {
+                                                "shortName": "Scarpone antitaglio - Functional"
+                                            },
+                                            "mainImage": {
+                                                "alt": "Functional Leather boots",
+                                                "mediaType": "STUDIO",
+                                                "sources": [
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "WebP",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.webp?v=5a327d9ed5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "WebP",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.webp?v=5a327d9ee00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "WebP",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.webp?v=5a327d9eccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "Png",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.png?v=5a327d9e4dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "Png",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.png?v=5a327d9e73b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "Png",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/boots/photos/studio/ap-830838.png?v=5a327d9e5296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "505665304",
+                                        "name": {
+                                            "shortName": "Cuffie protettive professionali a fascia"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Hearing protection",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.webp?v=872db648d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.webp?v=872db648e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.webp?v=872db648ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.png?v=872db6484dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.png?v=872db64873b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/hearing-protection/photos/studio/h410-0120.png?v=872db6485296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{16EAC14F-CB4F-47C2-92E9-97F141606094}",
+                                            "sku": "PIM5160",
+                                            "url": "/it/cuffie-protettive/cuffie-protettive-professionali-a-fascia/",
+                                            "category": {
+                                                "name": "Cuffie protettive"
+                                            },
+                                            "subCategories": []
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "580754201",
+                                        "name": {
+                                            "shortName": "Tanica Combinata Husqvarna"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Combi Can 2013",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.webp?v=aff53cf2d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.webp?v=aff53cf2e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.webp?v=aff53cf2ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.png?v=aff53cf24dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.png?v=aff53cf273b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/fuel-cans/photos/studio/h410-0955.png?v=aff53cf25296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{53BEA3FB-9287-4954-899C-AB694A507DE5}",
+                                            "sku": "PIM146088",
+                                            "url": "/it/taniche-per-rifornimento-e-accessori/tanica-combinata-husqvarna/",
+                                            "category": {
+                                                "name": "Taniche per rifornimento e accessori"
+                                            },
+                                            "subCategories": [
+                                                {
+                                                    "name": "Taniche per rifornimento"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Accessory",
+                                        "id": "{D770A75B-0AEF-4B06-A22E-1A1251319F13}",
+                                        "sku": "PIM9703172",
+                                        "url": "/it/tutto-abbigliamento-protettivo/pantalone-antitaglio-technical/",
+                                        "category": {
+                                            "id": "{4BD76A8B-3AAB-4BDF-A1D1-93170DD6E1F3}",
+                                            "name": "Abbigliamento protettivo e da lavoro",
+                                            "url": "/it/tutto-abbigliamento-protettivo/",
+                                            "description": "La nostra gamma di indumenti da lavoro e abbigliamento protettivo antitaglio tiene conto della stagione, delle condizioni meteorologiche e della temperatura, nonch\u00e9 del tipo di lavoro che si sta affrontando. Lavora in comodit\u00e0 e sicurezza, scegli una delle quattro linee disponibili in base all'attivit\u00e0 che svolgerai.",
+                                            "parentCategory": null
+                                        },
+                                        "subCategories": [],
+                                        "primaryArticle": {
+                                            "__typename": "Article",
+                                            "id": "582333546",
+                                            "name": {
+                                                "shortName": "Pantalone antitaglio - Technical"
+                                            },
+                                            "mainImage": {
+                                                "alt": "Technical Waist Trousers",
+                                                "mediaType": "STUDIO",
+                                                "sources": [
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "WebP",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.webp?v=cccc3c79d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "WebP",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.webp?v=cccc3c79e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "WebP",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.webp?v=cccc3c79ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "Png",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.png?v=cccc3c794dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "Png",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.png?v=cccc3c7973b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "Png",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1149.png?v=cccc3c795296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Accessory",
+                                        "id": "{76474D20-A2A4-41DD-97CD-26436E9384B9}",
+                                        "sku": "PIM9703762",
+                                        "url": "/it/tutto-abbigliamento-protettivo/pantalone-antitaglio-classic/",
+                                        "category": {
+                                            "id": "{4BD76A8B-3AAB-4BDF-A1D1-93170DD6E1F3}",
+                                            "name": "Abbigliamento protettivo e da lavoro",
+                                            "url": "/it/tutto-abbigliamento-protettivo/",
+                                            "description": "La nostra gamma di indumenti da lavoro e abbigliamento protettivo antitaglio tiene conto della stagione, delle condizioni meteorologiche e della temperatura, nonch\u00e9 del tipo di lavoro che si sta affrontando. Lavora in comodit\u00e0 e sicurezza, scegli una delle quattro linee disponibili in base all'attivit\u00e0 che svolgerai.",
+                                            "parentCategory": null
+                                        },
+                                        "subCategories": [],
+                                        "primaryArticle": {
+                                            "__typename": "Article",
+                                            "id": "582335844",
+                                            "name": {
+                                                "shortName": "Pantalone antitaglio - Classic"
+                                            },
+                                            "mainImage": {
+                                                "alt": "Classic Waist Trousers",
+                                                "mediaType": "STUDIO",
+                                                "sources": [
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "WebP",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.webp?v=90da50aed5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "WebP",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.webp?v=90da50aee00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "WebP",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.webp?v=90da50aeccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                        "output": "Png",
+                                                        "height": 107,
+                                                        "width": 160,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.png?v=90da50ae4dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                        "output": "Png",
+                                                        "height": 213,
+                                                        "width": 320,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.png?v=90da50ae73b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                    },
+                                                    {
+                                                        "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                        "output": "Png",
+                                                        "height": 427,
+                                                        "width": 640,
+                                                        "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/protective-clothing/photos/studio/h410-1140.png?v=90da50ae5296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "583876901",
+                                        "name": {
+                                            "shortName": "Detergente per abbigliamento protettivo"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Active cleaning",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.webp?v=2b18b220d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.webp?v=2b18b220e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.webp?v=2b18b220ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.png?v=2b18b2204dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.png?v=2b18b22073b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/grease-and-lubricants/photos/studio/h410-0889b.png?v=2b18b2205296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{C0832BB5-3EF0-4C32-B2E1-7CBFC49B8560}",
+                                            "sku": "PIM1518",
+                                            "url": "/it/tutto-abbigliamento-protettivo/detergente-per-abbigliamento-protettivo/",
+                                            "category": {
+                                                "name": "Abbigliamento protettivo e da lavoro"
+                                            },
+                                            "subCategories": []
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "544963701",
+                                        "name": {
+                                            "shortName": "Occhiali protettivi, Clear X"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Protective glasses, Clear X",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.webp?v=feec3921d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.webp?v=feec3921e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.webp?v=feec3921ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.png?v=feec39214dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.png?v=feec392173b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0518.png?v=feec39215296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{A7076112-D660-4150-9CFF-1BB1F0C2513A}",
+                                            "sku": "PIM69038",
+                                            "url": "/it/protezione-della-vista/occhiali-protettivi-clear-x/",
+                                            "category": {
+                                                "name": "Protezione della vista"
+                                            },
+                                            "subCategories": []
+                                        }
+                                    },
+                                    {
+                                        "__typename": "Article",
+                                        "id": "544963703",
+                                        "name": {
+                                            "shortName": "Occhiali protettivi, Sun X"
+                                        },
+                                        "mainImage": {
+                                            "alt": "Protective glasses, Sun X",
+                                            "mediaType": "STUDIO",
+                                            "sources": [
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "WebP",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.webp?v=f0e1ee4d5c7f2d3&format=WEBP_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "WebP",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.webp?v=f0e1ee4e00e823f&format=WEBP_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "WEBP_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "WebP",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.webp?v=f0e1ee4ccd0c4b1&format=WEBP_LANDSCAPE_CONTAIN_LG"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_SM",
+                                                    "output": "Png",
+                                                    "height": 107,
+                                                    "width": 160,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.png?v=f0e1ee44dece5da&format=PNG_LANDSCAPE_CONTAIN_SM"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_MD",
+                                                    "output": "Png",
+                                                    "height": 213,
+                                                    "width": 320,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.png?v=f0e1ee473b96518&format=PNG_LANDSCAPE_CONTAIN_MD"
+                                                },
+                                                {
+                                                    "config": "PNG_LANDSCAPE_CONTAIN_LG",
+                                                    "output": "Png",
+                                                    "height": 427,
+                                                    "width": 640,
+                                                    "url": "https://www-static-nw.husqvarna.com/-/images/aprimo/husqvarna/visual-protection/photos/studio/h410-0522.png?v=f0e1ee45296a5c4&format=PNG_LANDSCAPE_CONTAIN_LG"
+                                                }
+                                            ]
+                                        },
+                                        "product": {
+                                            "id": "{C85767F7-38DF-4002-A199-36CAA125D5C0}",
+                                            "sku": "PIM69043",
+                                            "url": "/it/protezione-della-vista/occhiali-protettivi-sun-x/",
+                                            "category": {
+                                                "name": "Protezione della vista"
+                                            },
+                                            "subCategories": []
+                                        }
+                                    }
+                                ]
+                            },
+                            "spareParts": {
+                                "skip": 0,
+                                "take": 8,
+                                "totalCount": 0,
+                                "result": []
+                            }
+                        }
+                    ],
+                    "specifications": {
+                        "specificationDefinitions": [
+                            {
+                                "id": "TD33_metric",
+                                "idSecondary": "TD33_imperial",
+                                "name": "Velocit\u00e0 catena alla potenza max",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD3_metric",
+                                "idSecondary": "TD3_imperial",
+                                "name": "Potenza resa",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD18_metric",
+                                "idSecondary": "TD18_imperial",
+                                "name": "Cilindrata",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD149",
+                                "idSecondary": "",
+                                "name": "Potenza nominale",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "ART_423",
+                                "idSecondary": "",
+                                "name": "Exhaust emissions (CO2 EU V)",
+                                "definingSpecification": false,
+                                "disclaimerText": "Questa misurazione di CO2 \u00e8 il risultato di prove effettuate su un ciclo di prova fisso in condizioni di laboratorio su un motore (capogruppo) rappresentante del tipo di motore (famiglia di motori) e non implica o esprime alcuna garanzia delle prestazioni di un motore particolare."
+                            },
+                            {
+                                "id": "TD231",
+                                "idSecondary": "ART_634",
+                                "name": "Tensione batteria",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1111",
+                                "idSecondary": "",
+                                "name": "Tipo batteria",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1349",
+                                "idSecondary": "",
+                                "name": "Passo",
+                                "definingSpecification": true,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT59",
+                                "idSecondary": "",
+                                "name": "Tipo catena",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "ART_177",
+                                "idSecondary": "",
+                                "name": "Lunghezza barra",
+                                "definingSpecification": true,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD32_1_metric|TD32_2_metric",
+                                "idSecondary": "TD32_1_imperial|TD32_2_imperial",
+                                "name": "Lunghezza della barra consigliata, min-max",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD2_metric",
+                                "idSecondary": "TD2_imperial",
+                                "name": "Peso (gruppo di taglio escl.)",
+                                "definingSpecification": true,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD1185_metric",
+                                "idSecondary": "TD1185_imperial",
+                                "name": "Peso (escl. batteria e gruppo di taglio)",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD35",
+                                "idSecondary": "",
+                                "name": "Livello di potenza acustica, garantito (LWA)",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD860",
+                                "idSecondary": "",
+                                "name": "Livello di pressione acustica all'orecchio dell'operatore",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD862_1",
+                                "idSecondary": "",
+                                "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura anteriore",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "TD862_2",
+                                "idSecondary": "",
+                                "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura posteriore",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1966",
+                                "idSecondary": "",
+                                "name": "Batteria - Nome modello",
+                                "definingSpecification": true,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1968",
+                                "idSecondary": "",
+                                "name": "Caricabatterie - Nome modello",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1967",
+                                "idSecondary": "",
+                                "name": "Numero di batterie incluse",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT50",
+                                "idSecondary": "",
+                                "name": "Tipo barra (lungo)",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT55",
+                                "idSecondary": "",
+                                "name": "Ramponi",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "PT1000",
+                                "idSecondary": "",
+                                "name": "Tipo carburante",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            },
+                            {
+                                "id": "WEB_ChainsawSubGroup",
+                                "idSecondary": "",
+                                "name": "Generic Chainsaw SubGroups",
+                                "definingSpecification": false,
+                                "disclaimerText": null
+                            }
+                        ],
+                        "articleDefiningSpecificationDefinitions": [
+                            {
+                                "id": "TD2_metric"
+                            },
+                            {
+                                "id": "ART_177"
+                            },
+                            {
+                                "id": "PT1349"
+                            },
+                            {
+                                "id": "PT1966"
+                            }
+                        ],
+                        "specificationGroups": [
+                            {
+                                "isNamedGroup": true,
+                                "name": "Motore",
+                                "specifications": [
+                                    {
+                                        "name": "Velocit\u00e0 catena alla potenza max",
+                                        "id": "TD33_metric",
+                                        "idSecondary": "TD33_imperial",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Potenza resa",
+                                        "id": "TD3_metric",
+                                        "idSecondary": "TD3_imperial",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Cilindrata",
+                                        "id": "TD18_metric",
+                                        "idSecondary": "TD18_imperial",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Potenza nominale",
+                                        "id": "TD149",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Exhaust emissions (CO2 EU V)",
+                                        "id": "ART_423",
+                                        "idSecondary": "",
+                                        "disclaimerText": "Questa misurazione di CO2 \u00e8 il risultato di prove effettuate su un ciclo di prova fisso in condizioni di laboratorio su un motore (capogruppo) rappresentante del tipo di motore (famiglia di motori) e non implica o esprime alcuna garanzia delle prestazioni di un motore particolare."
+                                    },
+                                    {
+                                        "name": "Tensione batteria",
+                                        "id": "TD231",
+                                        "idSecondary": "ART_634",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Tipo batteria",
+                                        "id": "PT1111",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    }
+                                ]
+                            },
+                            {
+                                "isNamedGroup": true,
+                                "name": "Attrezzatura",
+                                "specifications": [
+                                    {
+                                        "name": "Passo",
+                                        "id": "PT1349",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Tipo catena",
+                                        "id": "PT59",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Lunghezza barra",
+                                        "id": "ART_177",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Lunghezza della barra consigliata, min-max",
+                                        "id": "TD32_1_metric|TD32_2_metric",
+                                        "idSecondary": "TD32_1_imperial|TD32_2_imperial",
+                                        "disclaimerText": null
+                                    }
+                                ]
+                            },
+                            {
+                                "isNamedGroup": true,
+                                "name": "Dimensioni",
+                                "specifications": [
+                                    {
+                                        "name": "Peso (gruppo di taglio escl.)",
+                                        "id": "TD2_metric",
+                                        "idSecondary": "TD2_imperial",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Peso (escl. batteria e gruppo di taglio)",
+                                        "id": "TD1185_metric",
+                                        "idSecondary": "TD1185_imperial",
+                                        "disclaimerText": null
+                                    }
+                                ]
+                            },
+                            {
+                                "isNamedGroup": true,
+                                "name": "Suono e rumorosit\u00e0",
+                                "specifications": [
+                                    {
+                                        "name": "Livello di potenza acustica, garantito (LWA)",
+                                        "id": "TD35",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Livello di pressione acustica all'orecchio dell'operatore",
+                                        "id": "TD860",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    }
+                                ]
+                            },
+                            {
+                                "isNamedGroup": true,
+                                "name": "Vibrazioni",
+                                "specifications": [
+                                    {
+                                        "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura anteriore",
+                                        "id": "TD862_1",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    },
+                                    {
+                                        "name": "Livello di vibrazioni equivalente (ahv, eq) impugnatura posteriore",
+                                        "id": "TD862_2",
+                                        "idSecondary": "",
+                                        "disclaimerText": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "topSpecifications": [
+                            {
+                                "minValuePrimary": 38.2,
+                                "minValueSecondary": 2.33,
+                                "maxValuePrimary": 38.2,
+                                "maxValueSecondary": 2.33,
+                                "definingSpecification": false,
+                                "format": "{v:##,##0.#} {u}",
+                                "formatSecondary": "",
+                                "id": "TD18_metric",
+                                "idSecondary": "TD18_imperial",
+                                "name": "Cilindrata",
+                                "unit": "cm\u00b3",
+                                "unitSecondary": "pollici cubi",
+                                "rangePrimary": "38,2 cm\u00b3",
+                                "rangeSecondary": "2,33 pollici cubi"
+                            },
+                            {
+                                "minValuePrimary": 1.4,
+                                "minValueSecondary": 1.88,
+                                "maxValuePrimary": 1.4,
+                                "maxValueSecondary": 1.88,
+                                "definingSpecification": false,
+                                "format": "",
+                                "formatSecondary": "",
+                                "id": "TD3_metric",
+                                "idSecondary": "TD3_imperial",
+                                "name": "Potenza resa",
+                                "unit": "kW",
+                                "unitSecondary": "CV",
+                                "rangePrimary": "1,4 kW",
+                                "rangeSecondary": "1,88 CV"
+                            },
+                            {
+                                "minValuePrimary": null,
+                                "minValueSecondary": null,
+                                "maxValuePrimary": null,
+                                "maxValueSecondary": null,
+                                "definingSpecification": false,
+                                "format": "",
+                                "formatSecondary": "",
+                                "id": "TD231",
+                                "idSecondary": "ART_634",
+                                "name": "Tensione batteria",
+                                "unit": null,
+                                "unitSecondary": null,
+                                "rangePrimary": null,
+                                "rangeSecondary": null
+                            },
+                            {
+                                "minValuePrimary": 16.8,
+                                "minValueSecondary": 55.0,
+                                "maxValuePrimary": 16.8,
+                                "maxValueSecondary": 55.0,
+                                "definingSpecification": false,
+                                "format": "",
+                                "formatSecondary": "",
+                                "id": "TD33_metric",
+                                "idSecondary": "TD33_imperial",
+                                "name": "Velocit\u00e0 catena alla potenza max",
+                                "unit": "m/s",
+                                "unitSecondary": "piedi/sec",
+                                "rangePrimary": "16,8 m/s",
+                                "rangeSecondary": "55 piedi/sec"
+                            },
+                            {
+                                "minValuePrimary": null,
+                                "minValueSecondary": null,
+                                "maxValuePrimary": null,
+                                "maxValueSecondary": null,
+                                "definingSpecification": false,
+                                "format": "",
+                                "formatSecondary": "",
+                                "id": "TD149",
+                                "idSecondary": "",
+                                "name": "Potenza nominale",
+                                "unit": null,
+                                "unitSecondary": null,
+                                "rangePrimary": null,
+                                "rangeSecondary": null
+                            }
+                        ],
+                        "oemSpecifications": [
+                            {
+                                "id": "PT59",
+                                "idSecondary": "",
+                                "name": "Tipo catena",
+                                "definingSpecification": false
+                            },
+                            {
+                                "id": "PT1966",
+                                "idSecondary": "",
+                                "name": "Batteria - Nome modello",
+                                "definingSpecification": true
+                            },
+                            {
+                                "id": "PT1968",
+                                "idSecondary": "",
+                                "name": "Caricabatterie - Nome modello",
+                                "definingSpecification": false
+                            },
+                            {
+                                "id": "PT1967",
+                                "idSecondary": "",
+                                "name": "Numero di batterie incluse",
+                                "definingSpecification": false
+                            },
+                            {
+                                "id": "ART_177",
+                                "idSecondary": "",
+                                "name": "Lunghezza barra",
+                                "definingSpecification": true
+                            },
+                            {
+                                "id": "PT50",
+                                "idSecondary": "",
+                                "name": "Tipo barra (lungo)",
+                                "definingSpecification": false
+                            },
+                            {
+                                "id": "PT55",
+                                "idSecondary": "",
+                                "name": "Ramponi",
+                                "definingSpecification": false
+                            }
+                        ]
+                    },
+                    "documents": [],
+                    "services": {
+                        "get": {
+                            "result": []
+                        }
+                    },
+                    "offers": {
+                        "get": {
+                            "result": []
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dealerPage": {
+        "text": "Ricerca Rivenditore",
+        "href": "/it/ricerca-rivenditore/",
+        "target": "",
+        "isInternal": true,
+        "isMediaLink": false,
+        "kind": "internal",
+        "title": ""
+    },
+    "shippingAndReturnPolicyPage": null,
+    "commerceArticleLinks": {},
+    "queryString": "",
+    "commerceDeliveryNotice": "Consegna 2-14 giorni",
+    "commerceDisclaimer": "",
+    "relatedSparePartPage": null,
+    "messages": {
+        "articlePicker.drawer.closeButton": "Chiudi la guida",
+        "articlePicker.drawer.moreInfo": "{articleName}: per ulteriori informazioni, consulta l'elenco completo delle caratteristiche e delle specifiche",
+        "general.viewMore": "Vedi tutto",
+        "general.readMore": "Maggiori informazioni",
+        "general.readMoreAbout": "Scopri di pi\u00f9 su {subject}",
+        "modal.close": "Chiudi finestra modale",
+        "product.price.from": "Da {price}",
+        "productDetails.accordion.accessoriesIntroduction": "",
+        "productDetails.accordion.accessoriesTitle": "Accessori",
+        "productDetails.accordion.collapseAll": "Riduci tutto",
+        "productDetails.accordion.documentsAssemblyManuals": "Istruzioni di montaggio",
+        "productDetails.accordion.documentsIllustratedPartsManuals": "Elenco ricambi illustrato",
+        "productDetails.accordion.documentsIntroduction": "",
+        "productDetails.accordion.documentsNoDocsFound": "Non sono presenti documenti per il prodotto.",
+        "productDetails.accordion.documentsOwnerManuals": "Manuali operatore",
+        "productDetails.accordion.documentsOwnerManualsQuick": "Guide rapide",
+        "productDetails.accordion.documentsRegulatoryDocuments": "Documenti normativi",
+        "productDetails.accordion.documentsShowMore": "Mostra altro",
+        "productDetails.accordion.documentsTitle": "Manuali e documenti",
+        "productDetails.accordion.expandAll": "Espandi tutto",
+        "productDetails.accordion.featuresIntroduction": "",
+        "productDetails.accordion.featuresTitle": "Caratteristiche",
+        "productDetails.accordion.fitsToIntroduction": "",
+        "productDetails.accordion.fitsToTitle": "Si adatta al modello",
+        "productDetails.accordion.includedIntroduction": "",
+        "productDetails.accordion.includedTitle": "Cosa \u00e8 incluso",
+        "productDetails.accordion.offersTitle": "Offerte",
+        "productDetails.accordion.reviewsTitle": "Recensioni",
+        "productDetails.accordion.servicesIntroduction": "",
+        "productDetails.accordion.servicesTitle": "Servizi",
+        "productDetails.accordion.sparePartsGhostCardLink": "Altre parti di ricambio",
+        "productDetails.accordion.sparePartsGhostCardTitle": "Non trovi quello che stai cercando?",
+        "productDetails.accordion.sparePartsIntroduction": "Questa sezione contiene parti di ricambio utilizzate di frequente per Husqvarna {articleName}. Se non riesci a trovare l'articolo che cerchi di seguito, consulta Altre parti di ricambio per {category}.",
+        "productDetails.accordion.sparePartsLink": "Altre parti di ricambio per {category}",
+        "productDetails.accordion.sparePartsTitle": "Ricambi",
+        "productDetails.accordion.specificationsIntroduction": "",
+        "productDetails.accordion.specificationsTitle": "Specifiche",
+        "productDetails.accordion.supportIntroduction": "",
+        "productDetails.accordion.supportTitle": "Supporto e ricambi",
+        "productDetails.accordion.title": "Informazioni sul prodotto",
+        "productDetails.artNo": "Art. n.: {artNumber}",
+        "productDetails.aside.accordionAttributesTitle": "{price} - Il prezzo include",
+        "productDetails.aside.accordionAttributesTitleNoPrice": "Cosa \u00e8 incluso",
+        "productDetails.aside.addToCart": "Aggiungi al carrello",
+        "productDetails.aside.articlePickerSubTitle": "Per {productName} ({articleCount})",
+        "productDetails.aside.articlePickerTitle": "Varianti del prodotto",
+        "productDetails.aside.buyNow": "Acquista ora {price}",
+        "productDetails.aside.findADealer": "Trova un rivenditore",
+        "productDetails.aside.inStock": "Disponibile online",
+        "productDetails.aside.outOfStock": "Esaurito",
+        "productDetails.aside.selectProductVariant": "Variante del prodotto",
+        "productDetails.aside.viewAll": "Visualizza elenco",
+        "productDetails.featureModal.title": "Caratteristiche",
+        "productDetails.info.productDescription": "Descrizione del prodotto",
+        "productDetails.primaryScroller.playVideoTex": "Riproduci video",
+        "productDetails.primaryScroller.showFullScreen": "Visualizza l'immagine a schermo intero",
+        "products.campaignBadge": "Offerta",
+        "products.newBadge": "Nuovo"
+    },
+    "locale": "it-IT"
+}
