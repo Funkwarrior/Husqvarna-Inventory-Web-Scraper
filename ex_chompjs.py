@@ -11,11 +11,10 @@ r = s.get(url)
 
 script_css = 'script:contains("ProductDetails")'
 script_text = r.html.find(script_css, first=True)
-json_data = chompjs.parse_js_object(script_text.text).encode('utf8')
-#pprint.pprint((json_data))
+json_data = chompjs.parse_js_object(script_text.text)
 
-print (type(script_text))
-print (dir(script_text))
+print(type(script_text.text))
+#print (dir(script_text))
 
 with open('scriptjson.html', 'w',encoding="utf-8") as f:
-  f.write(script_text.html)
+  f.write(script_text.text)
