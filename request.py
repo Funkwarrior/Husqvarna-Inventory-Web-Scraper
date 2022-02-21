@@ -1,4 +1,7 @@
 import requests
+import json
+import pprint
+import jmespath
 
 headers = {
     'authority': 'www.husqvarna.com',
@@ -23,22 +26,14 @@ json_data = {
     'query': '\n    query getCommerceData($articleIds: [ID!]!, $productSkus: [ID!]!, $siteName: String!) {\n  site(name: $siteName) {\n    articles {\n      byIds(ids: $articleIds) {\n        ...ArticleCommerceData\n      }\n    }\n    products {\n      bySkus(skus: $productSkus) {\n        ...ProductCommerceData\n      }\n    }\n  }\n}\n    \n    fragment ArticleCommerceData on Article {\n  id\n  inventory\n  commerceLink {\n    ...LinkDataFields\n  }\n  campaignPrice {\n    ...PriceFragment\n  }\n  price {\n    ...PriceFragment\n  }\n  isNew\n  hasCampaigns\n  campaigns {\n    ...CampaignData\n  }\n  buyableOnline\n}\n    \n\n    fragment LinkDataFields on LinkData {\n  text\n  href\n  target\n  kind\n  title\n}\n    \n\n    fragment PriceFragment on Price {\n  disclaimer\n  displayPrice {\n    ...MoneyFragment\n  }\n}\n    \n\n    fragment MoneyFragment on Money {\n  amount\n  currency\n}\n    \n\n    fragment CampaignData on CampaignType {\n  title\n  description\n}\n    \n\n    fragment ProductCommerceData on Product {\n  sku\n  fromListPrice {\n    ...PriceFragment\n  }\n  fromCampaignPrice {\n    ...PriceFragment\n  }\n  isNew\n  hasCampaigns\n}\n    ',
     'variables': {
         'articleIds': [
-            '597255701',
-            '580754301',
-            '505665304',
-            '580754201',
-            '583876901',
-            '544963701',
-            '544963703',
-            '967861903',
+             '967861903',
         ],
-        'productSkus': [
-            'PIM98880438',
-            'PIM9703172',
-            'PIM9703762',
-        ],
+        'productSkus': [],
         'siteName': 'hbd-it-it-it',
     },
 }
 
 response = requests.post('https://www.husqvarna.com/hbd/graphql', headers=headers, json=json_data)
+data = response.json()
+price = jmespath.search('data.site.articles.byIds[0].price.displayPrice.amount', data)
+print (price)

@@ -36,5 +36,4 @@ product.append(jmespath.search('initialData.site.products.get.url', json_clean))
 product.append(jmespath.search('initialData.site.products.get.category.name', json_clean))
 product.append(jmespath.search('initialData.site.products.get.articles[0].id', json_clean))
 product.append(jmespath.search('initialData.site.products.get.articles[0].introductionText', json_clean))
-
 print(product)
