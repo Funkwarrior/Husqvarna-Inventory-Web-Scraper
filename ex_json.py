@@ -1,7 +1,10 @@
 from requests_html import HTMLSession
+from PIL import Image
 import json
 import pprint
 import jmespath
+import urllib
+
 
 s = HTMLSession()
 url ="https://www.husqvarna.com/it/motoseghe/120-mark-ii/"
@@ -36,4 +39,12 @@ product.append(jmespath.search('initialData.site.products.get.url', json_clean))
 product.append(jmespath.search('initialData.site.products.get.category.name', json_clean))
 product.append(jmespath.search('initialData.site.products.get.articles[0].id', json_clean))
 product.append(jmespath.search('initialData.site.products.get.articles[0].introductionText', json_clean))
+product.append(jmespath.search('initialData.site.products.get.articles[0].mainImage.sources[2].url', json_clean))
 print(product)
+
+#urllib.urlretrieve(product[-1], f(product[1]+".jpg"))
+
+
+#urllib.urlretrieve(each, filename)
+#im = Image.open(product[-1]).convert("RGB")
+#im.save(f(product[1]+".jpg"), "jpeg)"
