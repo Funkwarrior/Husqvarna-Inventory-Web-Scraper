@@ -36,4 +36,5 @@ json_data = {
 response = requests.post('https://www.husqvarna.com/hbd/graphql', headers=headers, json=json_data)
 data = response.json()
 price = jmespath.search('data.site.articles.byIds[0].price.displayPrice.amount', data)
-print (price)
+campaignprice = jmespath.search('data.site.articles.byIds[0].campaignPrice.displayPrice.amount', data)
+print (price, campaignprice )
