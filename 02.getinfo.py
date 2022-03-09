@@ -1,9 +1,9 @@
 from requests_html import HTMLSession
+import requests
 from PIL import Image
 import json
 import pprint
 import jmespath
-import urllib
 
 
 s = HTMLSession()
@@ -22,8 +22,8 @@ json_dirty = z[z.find(start)+len(start):z.rfind(end)].strip() #get the token out
 json_clean = json.loads(json_dirty)
 save_filepath = 'ex_json_json_clean.json'
 
-with open(file=save_filepath, mode='w') as output_file:
-    json.dump(json_clean, output_file, indent=4)
+#with open(file=save_filepath, mode='w') as output_file:
+#    json.dump(json_clean, output_file, indent=4)
 
 product = []
 #p_name = jmespath.search('initialData.site.products.get.name.longName', json_clean)
@@ -42,9 +42,8 @@ product.append(jmespath.search('initialData.site.products.get.articles[0].introd
 product.append(jmespath.search('initialData.site.products.get.articles[0].mainImage.sources[2].url', json_clean))
 print(product)
 
-#urllib.urlretrieve(product[-1], f(product[1]+".jpg"))
+img_data = requests.get(product[-1]).content
+img_name = product[0] + '.jpg'
 
-
-#urllib.urlretrieve(each, filename)
-#im = Image.open(product[-1]).convert("RGB")
-#im.save(f(product[1]+".jpg"), "jpeg)"
+with open(img_name, 'wb') as handler:
+    handler.write(img_data)
