@@ -1,6 +1,6 @@
 #!/usr/bin/python
 from lxml import html
-from bs4 import BeautifulSoup as soup
+from bs4 import BeautifulSoup
 from numpy import product
 import requests
 import ftfy
@@ -33,7 +33,7 @@ def scan_for_products_link(page):
 
 with open('ex_prodcat.html', 'r') as f:
   content = f.read()
-  page = soup(content, 'html.parser')
+  page = BeautifulSoup(content, 'html.parser')
  # print(scan_for_products_link(page))
 f.close()
 
@@ -50,8 +50,8 @@ def retrieve_product_info(page):
 
 with open('ex_prod.html', 'r') as f:
   content = f.read()
-  page = soup(content, 'html.parser')
+  page = BeautifulSoup(content, 'html.parser')
   retrieve_product_info(page)
 f.close()
 
-#product_soup = soup(requests.get("https://www.husqvarna.com/it/motoseghe/120-mark-ii/", headers=headers).text, "html.parser")
+#product_soup = BeautifulSoup(requests.get("https://www.husqvarna.com/it/motoseghe/120-mark-ii/", headers=headers).text, "html.parser")
