@@ -1,14 +1,16 @@
+from email.mime import image
 import requests
 from requests_html import HTMLSession
 import pandas as pd
 from bs4 import BeautifulSoup
-from PIL import Image
+from PIL import Image, ImageOps
 from pprint import pprint
 import jmespath
 import ftfy
 import json
 from itertools import chain
 import pandas as pd
+from io import BytesIO
 
 baseurl = "https://www.husqvarna.com"
 language = "it"
@@ -107,15 +109,24 @@ def get_product_details():
     product.append({
       "p_name" : jmespath.search("initialData.site.products.get.name.longName", json_clean),
       "p_sku" : jmespath.search("initialData.site.products.get.sku", json_clean),
-      "p_url" : baseurl+"/"+language+jmespath.search("initialData.site.products.get.url", json_clean),
+      "p_url" : baseurl+jmespath.search("initialData.site.products.get.url", json_clean),
       "p_cat" : jmespath.search("initialData.site.products.get.category.name", json_clean),
+      "p_subcat" : jmespath.search("initialData.site.products.get.subCategories.name", json_clean),
       "p_id" : jmespath.search("initialData.site.products.get.articles[0].id", json_clean),
       "p_desc" : jmespath.search("initialData.site.products.get.articles[0].introductionText", json_clean),
-      "p_image" : jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[2].url", json_clean),
+      "p_image" : jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[7].url", json_clean),
     })
 
-    img_data = requests.get(product[i].get("p_image")).content
-    img_name = product[i].get("p_id") + product[i].get("p_name") + '.jpg'
+    """
+    img_data = Image.open(BytesIO(requests.get(product[i].get("p_image")).content))
+    img_notrasp = Image.new("RGBA", img_data.size,(255,255,255,255))
+    img_out = Image.new("L", img_data.size)
+    #img_out.paste(img_data.convert("L"), (0,0), mask = img_out)
+    img_notrasp.paste(img_data, (0,0), img_data)
+    img_data = img_data.convert("RGB")
+    img_name = product[i].get("p_id") + "-" + product[i].get("p_name").replace(" ", "_") + '.jpg'
+    img_data.save(img_name,"JPEG")
+    """
 
   return product
 
