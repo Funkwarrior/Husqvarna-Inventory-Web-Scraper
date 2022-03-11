@@ -1,24 +1,25 @@
 
 import requests
 from requests_html import HTMLSession
-import chompjs
 import pandas as pd
 from bs4 import BeautifulSoup
-import regex
+from pprint import pprint
 
 baseurl = 'https://www.husqvarna.com/it'
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'}
 
 try:
   s = HTMLSession()
-  r = s.get(baseurl)
+  r = s.get(baseurl, headers=headers)
 
 except requests.exceptions.RequestException as e:
     print(e)
 
 soup = BeautifulSoup(r.content, "html.parser")
-child_soup = soup.select_one('a:-soup-contains("Gamma completa")').text.strip()
+links = soup.select('a:-soup-contains("Gamma completa")')
 
-print(child_soup)
+for link in links:
+  print(link['href'])
 
-with open('home.html', 'w',encoding="utf-8") as f:
-  f.write(r.html)
+# with open('home.html', 'w',encoding="utf-8") as f:
+#  f.write(soup)
