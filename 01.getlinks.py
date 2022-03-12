@@ -1,6 +1,5 @@
 from email.mime import image
 import requests
-import grequests
 from requests_html import HTMLSession
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -117,6 +116,7 @@ def scan_for_products_link():
         logging.info("Getting product link of {a}".format(a=product_name))
 
     time.sleep(1.5)
+
 
   return products_links
 
