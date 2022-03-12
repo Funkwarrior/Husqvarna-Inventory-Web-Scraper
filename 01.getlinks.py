@@ -1,5 +1,6 @@
 from email.mime import image
 import requests
+import grequests
 from requests_html import HTMLSession
 import pandas as pd
 from bs4 import BeautifulSoup
