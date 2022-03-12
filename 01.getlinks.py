@@ -14,6 +14,9 @@ from io import BytesIO
 from styleframe import StyleFrame
 import re
 import time
+import logging
+
+logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 
 baseurl = "https://www.husqvarna.com"
 language = "it"
@@ -69,6 +72,9 @@ def get_prices(id):
   data = response.json()
   normalPrice = jmespath.search(f"data.site.articles.byIds[0].price.displayPrice.amount", data)
   offerPrice = jmespath.search(f"data.site.articles.byIds[0].campaignPrice.displayPrice.amount", data)
+
+  logging.info("Price of {a}, {b} and {c}".format(a=id, b=normalPrice, c=offerPrice))
+
   return normalPrice, offerPrice
 
 def get_categories():
@@ -82,6 +88,8 @@ def get_categories():
   links = page.select("a:-soup-contains('Gamma completa')")
 
   for link in links: categories.append(baseurl+link['href'])
+
+  logging.info("Get categories link of {a}".format(a=links))
 
   return categories
 
@@ -107,9 +115,14 @@ def scan_for_products_link():
 
   time.sleep(1.5)
 
+  logging.info("Get product links of {a} category".format(a=product_name))
+
   return products_links
 
 def get_product_details():
+  get_categories()
+  scan_for_products_link()
+
   start = "createElement(ProductDetails, "
   end = "), document.getElementById("
 
@@ -162,6 +175,8 @@ def get_product_details():
       "p_normalPrice" : p_normalPrice,
       "p_offerPrice" : p_offerPrice,
     })
+
+    print("Getting "+p_name+" details")
 
     """
     img_data = Image.open(BytesIO(requests.get(product[i].get("p_image")).content))
