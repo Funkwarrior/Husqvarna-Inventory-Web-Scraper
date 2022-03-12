@@ -87,9 +87,9 @@ def get_categories():
   page = BeautifulSoup(r.content, "html.parser")
   links = page.select("a:-soup-contains('Gamma completa')")
 
-  for link in links: categories.append(baseurl+link['href'])
-
-  logging.info("Get categories link of {a}".format(a=links))
+  for link in links:
+    categories.append(baseurl+link['href'])
+    logging.info("Get categories link of {a}: {b}".format(a=link.text.strip(), b=baseurl+link['href']))
 
   return categories
 
@@ -98,12 +98,12 @@ def scan_for_products_link():
 
   for products in categories:
     try:
-      s = HTMLSession()
-      r = s.get(products, headers=headers)
+      products_session = HTMLSession()
+      products_response = products_session.get(products, headers=headers)
     except requests.exceptions.RequestException as e:
       print(e)
 
-    category_page = BeautifulSoup(r.content, 'html.parser')
+    category_page = BeautifulSoup(products_response.content, 'html.parser')
     product_type = category_page.find("h1").text
     products_pages = category_page.find("div", {"class": "hui-grid__grid-lg-9"}).findAll("a", {"class": "hbd-link"})
 
@@ -111,11 +111,11 @@ def scan_for_products_link():
       if item.find('h4') is not None:
         product_link = baseurl + item.get('href')
         product_name = ftfy.fix_text(item.find("h4").text)
-        products_links.append({product_name, product_link})
+        products_links.append(product_link)
 
-  time.sleep(1.5)
+        logging.info("Getting product link of {a}".format(a=product_name))
 
-  logging.info("Get product links of {a} category".format(a=product_name))
+    time.sleep(1.5)
 
   return products_links
 
@@ -128,14 +128,15 @@ def get_product_details():
 
   for i in range(len(products_links)):
     try:
-      s = HTMLSession()
-      r = s.get(products_links[i], headers=headers)
+      product_session = HTMLSession()
+      product_response = product_session.get(products_links[i], headers=headers)
     except requests.exceptions.RequestException as e:
-      print(e)
+      logging.error("Session error {a}".format(a=e))
+
+    time.sleep(1.5)
 
     script_css = 'script:contains("ProductDetails")'
-    script_text = r.html.find(script_css, first=True)
-
+    script_text = product_response.html.find(script_css, first=True)
     z = script_text.text
     json_dirty = z[z.find(start)+len(start):z.rfind(end)].strip() #get the token out the html
 
@@ -176,7 +177,7 @@ def get_product_details():
       "p_offerPrice" : p_offerPrice,
     })
 
-    print("Getting "+p_name+" details")
+    logging.info("Getting {a} price".format(a=p_name))
 
     """
     img_data = Image.open(BytesIO(requests.get(product[i].get("p_image")).content))
@@ -187,8 +188,10 @@ def get_product_details():
     img_data = img_data.convert("RGB")
     img_name = product[i].get("p_id") + "-" + product[i].get("p_name").replace(" ", "_") + '.jpg'
     img_data.save(img_name,"JPEG")
+    logging.info("Saving {a} image with name {b}".format(a=p_name, b=img_name))
+
     """
-    time.sleep(1.5)
+
 
   return product
 
