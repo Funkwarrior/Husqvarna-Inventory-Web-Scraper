@@ -1,15 +1,9 @@
-# Husqvarna-Scraper
+# Husqvarna-New-Scraper
+Forked and rewrited entirely
+Firsts steps in Python and web scraping
 
-A basic still in dev scraper for husqvarna, Still needs some fixes but works mostly fine.
+## Requirements
 
-## Requirements 
-
-- BeautifulSoup4
-- Urllib
-- Python3
-- Some text editor.
-
+See requirements.txt
 ---------
 
-
-The output file is called items.csv , you can either move/rename the file. 
