@@ -1,4 +1,4 @@
-#!/home/fabiopegorari/Husqvarna-Inventory-Web-Scraper/venv/bin/python
+#!/Users/funkwarrior/Python/Husqvarna-Inventory-Web-Scraper/venv/bin/python
 
 import sys
 import json
