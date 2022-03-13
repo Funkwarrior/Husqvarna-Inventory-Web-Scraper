@@ -4,6 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from skimage.io import imread, imsave
 from skimage.color import rgba2rgb
+from skimage import img_as_ubyte
 import numpy as np
 import os
 import jmespath
@@ -57,6 +58,10 @@ headers = {
     'accept-language': 'en-GB,en;q=0.9,it-IT;q=0.8,it;q=0.7,en-US;q=0.6',
     'cookie': 'sessionid=vq1dc4henrngbo1v1tmppumo; hsqglobal#lang=it-IT; ASP.NET_SessionId=q3xq25km0fovv1f5fnpeldcz; SC_ANALYTICS_GLOBAL_COOKIE=68f29e1e7f704e90805b059c6353b096|False; OptanonAlertBoxClosed=2022-02-10T13:05:36.776Z; OptanonConsent=isGpcEnabled=0&datestamp=Mon+Feb+21+2022+17%3A17%3A07+GMT%2B0100+(Central+European+Standard+Time)&version=6.29.0&isIABGlobal=false&hosts=&consentId=59065fbc-8362-47f7-9fc9-7117155d9e71&interactionCount=1&landingPath=NotLandingPage&groups=C0002%3A1%2CC0003%3A1%2CC0004%3A1%2CC0005%3A1%2CC0001%3A1&geolocation=IT%3B36&AwaitingReconsent=false',
 }
+
+
+danea_codfornitore = "0042"
+danea_produttore = "Husqvarna"
 
 categories = []
 products_links = []
@@ -122,11 +127,13 @@ def get_product_details():
       "p_offerPrice" : p_offerPrice,
     })
 
-    logging.info("Getting {a} price".format(a=p_name))
+    logging.info("Getting price of {a} (Normal: {b} | Offer: {c})".format(a=p_name, b=p_normalPrice, c=p_offerPrice))
     img_data = imread(BytesIO(requests.get(p_image).content))
     img_name = p_id + "-" + p_name.replace(" ", "_") + '.jpg'
-    imsave(f"{image_path}/{img_name}", (rgba2rgb(img_data, (1,1,1))*255))
+    imsave(f"{image_path}/{img_name}", (img_as_ubyte(rgba2rgb(img_data), (1,1,1))))
     logging.info("Saving {a} image with name {b}".format(a=p_name, b=img_name))
+
+  return product
 
 
 def get_categories():
@@ -144,6 +151,7 @@ def get_categories():
     logging.info("Get categories link of {a}: {b}".format(a=link.text.strip(), b=baseurl+link['href']))
 
   return categories
+
 
 def scan_for_products_link():
 
@@ -171,6 +179,7 @@ def scan_for_products_link():
 
   return products_links
 
+
 def get_prices(id):
   json_data_for_price = {
     'query': '\n    query getCommerceData($articleIds: [ID!]!, $productSkus: [ID!]!, $siteName: String!) {\n  site(name: $siteName) {\n    articles {\n      byIds(ids: $articleIds) {\n        ...ArticleCommerceData\n      }\n    }\n    products {\n      bySkus(skus: $productSkus) {\n        ...ProductCommerceData\n      }\n    }\n  }\n}\n    \n    fragment ArticleCommerceData on Article {\n  id\n  inventory\n  commerceLink {\n    ...LinkDataFields\n  }\n  campaignPrice {\n    ...PriceFragment\n  }\n  price {\n    ...PriceFragment\n  }\n  isNew\n  hasCampaigns\n  campaigns {\n    ...CampaignData\n  }\n  buyableOnline\n}\n    \n\n    fragment LinkDataFields on LinkData {\n  text\n  href\n  target\n  kind\n  title\n}\n    \n\n    fragment PriceFragment on Price {\n  disclaimer\n  displayPrice {\n    ...MoneyFragment\n  }\n}\n    \n\n    fragment MoneyFragment on Money {\n  amount\n  currency\n}\n    \n\n    fragment CampaignData on CampaignType {\n  title\n  description\n}\n    \n\n    fragment ProductCommerceData on Product {\n  sku\n  fromListPrice {\n    ...PriceFragment\n  }\n  fromCampaignPrice {\n    ...PriceFragment\n  }\n  isNew\n  hasCampaigns\n}\n    ',
@@ -184,8 +193,6 @@ def get_prices(id):
   data = response.json()
   normalPrice = jmespath.search(f"data.site.articles.byIds[0].price.displayPrice.amount", data)
   offerPrice = jmespath.search(f"data.site.articles.byIds[0].campaignPrice.displayPrice.amount", data)
-
-  logging.info("Price of {a}, {b} and {c}".format(a=id, b=normalPrice, c=offerPrice))
 
   return normalPrice, offerPrice
 
@@ -201,10 +208,21 @@ def single_yes_or_no_question(question, default_no=True):
     else:
         return False if default_no else True
 
+
 def main(convert):
-  print(convert)
-  #df = pd.DataFrame(get_product_details())
-  #StyleFrame(df).to_excel("single_product.xlsx", index=False, sheet_name="Prodotti Husqvarna").save()
+  df = pd.DataFrame(get_product_details())
+
+  if convert:
+    df['Cod. fornitore'] = pd.Series([danea_codfornitore for x in range(len(df.index))])
+    df['Produttore'] = pd.Series([danea_produttore for x in range(len(df.index))])
+    logging.info("Adding Husqvarna columns for Danea")
+
+    df.rename(columns={'p_cat': 'Categoria', 'p_subcat': 'Sottocategoria', 'p_name': 'Descrizione', 'p_id': 'Cod.', 'p_url': 'Internet', 'p_desc': 'Note'}, inplace=True)
+    logging.info("Renaming columns for Danea")
+
+  StyleFrame(df).to_excel("single_product.xlsx", index=False, sheet_name="Prodotti Husqvarna").save()
+  logging.info("Done!")
+
 
 if __name__ == '__main__':
   convertDanea = single_yes_or_no_question('Convert for Danea import? (Yes/No)')
