@@ -65,7 +65,7 @@ product = []
 def get_product_details():
 #  get_categories()
 #  scan_for_products_link()
-  products_links = ['https://www.husqvarna.com/it/motoseghe/120-mark-ii/']
+  products_links = ['https://www.husqvarna.com/it/motoseghe/120-mark-ii/','https://www.husqvarna.com/it/trattorini-rasaerba-zero-turn/z242f/']
   start = "createElement(ProductDetails, "
   end = "), document.getElementById("
   image_path = "images/"
@@ -190,5 +190,22 @@ def get_prices(id):
   return normalPrice, offerPrice
 
 
-df = pd.DataFrame(get_product_details())
-StyleFrame(df).to_excel("single_product.xlsx", index=False, sheet_name="Prodotti Husqvarna").save()
+def single_yes_or_no_question(question, default_no=True):
+    choices = ' [y/N]: ' if default_no else ' [Y/n]: '
+    default_answer = 'n' if default_no else 'y'
+    reply = str(input(question + choices)).lower().strip() or default_answer
+    if reply[0] == 'y':
+        return True
+    if reply[0] == 'n':
+        return False
+    else:
+        return False if default_no else True
+
+def main(convert):
+  print(convert)
+  #df = pd.DataFrame(get_product_details())
+  #StyleFrame(df).to_excel("single_product.xlsx", index=False, sheet_name="Prodotti Husqvarna").save()
+
+if __name__ == '__main__':
+  convertDanea = single_yes_or_no_question('Convert for Danea import? (Yes/No)')
+  main(convertDanea)
