@@ -1,6 +1,8 @@
 {
-  "python.analysis.extraPaths": [
-    "python.analysis.extraPaths",
-    "./sources"
-  ]
+  "configurations": [
+    {
+     "python.analysis.extraPaths": [
+        "python.analysis.extraPaths", "./sources"
+      ]
+    }]
 }

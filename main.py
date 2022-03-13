@@ -59,9 +59,10 @@ headers = {
     'cookie': 'sessionid=vq1dc4henrngbo1v1tmppumo; hsqglobal#lang=it-IT; ASP.NET_SessionId=q3xq25km0fovv1f5fnpeldcz; SC_ANALYTICS_GLOBAL_COOKIE=68f29e1e7f704e90805b059c6353b096|False; OptanonAlertBoxClosed=2022-02-10T13:05:36.776Z; OptanonConsent=isGpcEnabled=0&datestamp=Mon+Feb+21+2022+17%3A17%3A07+GMT%2B0100+(Central+European+Standard+Time)&version=6.29.0&isIABGlobal=false&hosts=&consentId=59065fbc-8362-47f7-9fc9-7117155d9e71&interactionCount=1&landingPath=NotLandingPage&groups=C0002%3A1%2CC0003%3A1%2CC0004%3A1%2CC0005%3A1%2CC0001%3A1&geolocation=IT%3B36&AwaitingReconsent=false',
 }
 
-
+VAT = float(0.22)
 danea_codfornitore = "0042"
 danea_produttore = "Husqvarna"
+danea_imagepath = "C:\\Users\\fabio\\Pictures\\HVA\\"
 
 categories = []
 products_links = []
@@ -102,7 +103,7 @@ def get_product_details():
     p_id = jmespath.search("initialData.site.products.get.articles[0].id", json_clean)
     p_desc = jmespath.search("initialData.site.products.get.articles[0].introductionText", json_clean)
     p_image = jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[7].url", json_clean)
-    p_normalPrice, p_offerPrice = get_prices(p_id)
+    p_normalNetPrice, p_offerNetPrice = get_prices(p_id)
 
 
     for i in range(len(p_specs_data)):
@@ -112,7 +113,7 @@ def get_product_details():
           p_specs_data[i]["formattedValue"]
         )
 
-    img_name = re.sub(r"\W+|-", "_", p_id + "-" + p_name )+ '.jpg'
+    img_name = p_id + "-" + re.sub(r"\W+|-", "_", p_name )+ '.jpg'
 
     product.append({
       "p_name" : p_name,
@@ -122,12 +123,12 @@ def get_product_details():
       "p_subcat" : p_subcat,
       "p_id" : p_id,
       "p_desc" : "\n".join(p_specs) + "\n" + p_desc,
-      "p_image" : "'%PROFILE%\Documents\Images\\'" + img_name,
-      "p_normalPrice" : p_normalPrice,
-      "p_offerPrice" : p_offerPrice,
+      "p_image" : danea_imagepath + img_name,
+      "p_normalNetPrice" : p_normalNetPrice,
+      "p_offerNetPrice" : p_offerNetPrice,
     })
 
-    logging.info("Getting price of {a} (Normal: {b} | Offer: {c})".format(a=p_name, b=p_normalPrice, c=p_offerPrice))
+    logging.info("Getting price of {a} (Normal Net: {b} | Offer Net: {c})".format(a=p_name, b=p_normalNetPrice, c=p_offerNetPrice))
     img_data = imread(BytesIO(requests.get(p_image).content))
     img_name = p_id + "-" + p_name.replace(" ", "_") + '.jpg'
     imsave(f"{image_path}/{img_name}", (img_as_ubyte(rgba2rgb(img_data), (1,1,1))))
@@ -191,13 +192,17 @@ def get_prices(id):
   }
   response = requests.post(HVA_graphql, headers=headers, json=json_data_for_price)
   data = response.json()
+
   normalPrice = jmespath.search(f"data.site.articles.byIds[0].price.displayPrice.amount", data)
   offerPrice = jmespath.search(f"data.site.articles.byIds[0].campaignPrice.displayPrice.amount", data)
+
+  if normalPrice is not None : normalPrice = np.around(normalPrice / (1+VAT), decimals=2)
+  if offerPrice is not None : offerPrice = np.around(offerPrice / (1+VAT), decimals=2)
 
   return normalPrice, offerPrice
 
 
-def single_yes_or_no_question(question, default_no=True):
+def single_yes_or_no_question(question, default_no=False):
     choices = ' [y/N]: ' if default_no else ' [Y/n]: '
     default_answer = 'n' if default_no else 'y'
     reply = str(input(question + choices)).lower().strip() or default_answer
@@ -217,7 +222,18 @@ def main(convert):
     df['Produttore'] = pd.Series([danea_produttore for x in range(len(df.index))])
     logging.info("Adding Husqvarna columns for Danea")
 
-    df.rename(columns={'p_cat': 'Categoria', 'p_subcat': 'Sottocategoria', 'p_name': 'Descrizione', 'p_id': 'Cod.', 'p_url': 'Internet', 'p_desc': 'Note'}, inplace=True)
+    df.rename(columns={
+        'p_cat': 'Categoria',
+        'p_subcat': 'Sottocategoria',
+        'p_name': 'Descrizione',
+        'p_id': 'Cod.',
+        'p_url': 'Internet',
+        'p_desc': 'Note',
+        'p_normalNetPrice': 'Listino 1',
+        'p_offerNetPrice': 'Listino 2',
+        'p_image': 'Immagine',
+      }, inplace=True)
+
     logging.info("Renaming columns for Danea")
 
   StyleFrame(df).to_excel("single_product.xlsx", index=False, sheet_name="Prodotti Husqvarna").save()
