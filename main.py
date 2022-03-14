@@ -1,3 +1,4 @@
+from xmlrpc.client import Boolean
 import requests
 from requests_html import HTMLSession
 import pandas as pd
@@ -62,8 +63,9 @@ headers = {
 VAT = float(0.22)
 danea_codfornitore = "0042"
 danea_produttore = "Husqvarna"
-danea_imagepath = "C:\\Users\\bancone\\Pictures\\HVA\\"
-
+danea_imagepath = "C:\\Users\\funkwarrior\\Pictures\\HVA_images\\"
+danea_importGrossPrice = Boolean(True)
+image_path = "HVA_images"
 categories = []
 products_links = []
 product = []
@@ -71,7 +73,7 @@ product = []
 def get_product_details():
   get_categories()
   scan_for_products_link()
-# products_links = ['https://www.husqvarna.com/it/soffiatori/525ib-mark-ii/']
+#  products_links = ['https://www.husqvarna.com/it/motoseghe/535i-xp/']
   start = "createElement(ProductDetails, "
   end = "), document.getElementById("
 
@@ -100,12 +102,12 @@ def get_product_details():
     p_subcat = jmespath.search("initialData.site.products.get.subCategories[0].name", json_clean)
     p_id = jmespath.search("initialData.site.products.get.articles[0].id", json_clean)
     p_desc = jmespath.search("initialData.site.products.get.articles[0].introductionText", json_clean)
-    p_normalNetPrice, p_offerNetPrice = get_prices(p_id)
+    p_normalPrice, p_offerPrice = get_prices(p_id)
     p_image = jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[7].url", json_clean)
     if p_image is None:
       p_image = jmespath.search("initialData.site.products.get.articles[0].studioImages[0].sources[7].url", json_clean)
 
-    logging.info("Getting price of {a} (Normal Net: {b} | Offer Net: {c})".format(a=p_name, b=p_normalNetPrice, c=p_offerNetPrice))
+    logging.info("Getting price of {a} (Normal Net: {b} | Offer Net: {c})".format(a=p_name, b=p_normalPrice, c=p_offerPrice))
 
     for i in range(len(p_specs_data)):
       if p_specs_data[i].get("formattedValue") is not None:
@@ -125,21 +127,19 @@ def get_product_details():
       "p_id" : p_id,
       "p_desc" : "\n".join(p_specs) + "\n" + p_desc,
       "p_image" : danea_imagepath + img_name,
-      "p_normalNetPrice" : p_normalNetPrice,
-      "p_offerNetPrice" : p_offerNetPrice,
+      "p_normalPrice" : p_normalPrice,
+      "p_offerPrice" : p_offerPrice,
     })
 
-    if p_image is not None: save_image(p_id, p_image, p_name)
+    if p_image is not None: save_image(p_name, img_name, p_image)
 
   return product
 
 
-def save_image(p_id, p_image, p_name):
-    image_path = "images/"
+def save_image(p_name, img_name, p_image):
     os.makedirs(image_path, exist_ok=True)
 
     img_data = imread(BytesIO(requests.get(p_image).content))
-    img_name = p_id + "-" + p_name.replace(" ", "_") + '.jpg'
     imsave(f"{image_path}/{img_name}", (img_as_ubyte(rgba2rgb(img_data), (1,1,1))))
 
     logging.info("Saving {a} image with name {b}".format(a=p_name, b=img_name))
@@ -202,9 +202,9 @@ def get_prices(id):
 
   normalPrice = jmespath.search(f"data.site.articles.byIds[0].price.displayPrice.amount", data)
   offerPrice = jmespath.search(f"data.site.articles.byIds[0].campaignPrice.displayPrice.amount", data)
-
-  if normalPrice is not None : normalPrice = np.around(normalPrice / (1+VAT), decimals=1)
-  if offerPrice is not None : offerPrice = np.around(offerPrice / (1+VAT), decimals=1)
+  if not danea_importGrossPrice :
+    if normalPrice is not None : normalPrice = np.around(normalPrice / (1+VAT), decimals=1)
+    if offerPrice is not None : offerPrice = np.around(offerPrice / (1+VAT), decimals=1)
 
   return normalPrice, offerPrice
 
@@ -229,6 +229,13 @@ def main(convert):
     df['Produttore'] = pd.Series([danea_produttore for x in range(len(df.index))])
     logging.info("Adding Husqvarna columns for Danea")
 
+    ListinoA = "Listino 4"
+    ListinoB = "Listino 5"
+
+    if danea_importGrossPrice:
+      ListinoA = "Listino 4 (ivato)"
+      ListinoB = "Listino 5 (ivato)"
+
     df.rename(columns={
         'p_cat': 'Categoria',
         'p_subcat': 'Sottocategoria',
@@ -236,8 +243,8 @@ def main(convert):
         'p_id': 'Cod.',
         'p_url': 'Internet',
         'p_desc': 'Note',
-        'p_normalNetPrice': 'Listino 4',
-        'p_offerNetPrice': 'Listino 5',
+        'p_normalPrice': ListinoA,
+        'p_offerPrice': ListinoB,
         'p_image': 'Immagine',
       }, inplace=True)
 
