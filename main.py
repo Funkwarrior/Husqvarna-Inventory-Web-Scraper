@@ -69,13 +69,11 @@ products_links = []
 product = []
 
 def get_product_details():
-#  get_categories()
-#  scan_for_products_link()
-  products_links = ['https://www.husqvarna.com/it/motoseghe/120-mark-ii/','https://www.husqvarna.com/it/trattorini-rasaerba-zero-turn/z242f/']
+  get_categories()
+  scan_for_products_link()
+# products_links = ['https://www.husqvarna.com/it/soffiatori/525ib-mark-ii/']
   start = "createElement(ProductDetails, "
   end = "), document.getElementById("
-  image_path = "images/"
-  os.makedirs(image_path, exist_ok=True)
 
   for i in range(len(products_links)):
     try:
@@ -88,8 +86,8 @@ def get_product_details():
 
     script_css = 'script:contains("ProductDetails")'
     script_text = product_response.html.find(script_css, first=True)
-    z = script_text.text
-    json_dirty = z[z.find(start)+len(start):z.rfind(end)].strip() #get the token out the html
+    script_content = script_text.text
+    json_dirty = script_content[script_content.find(start)+len(start):script_content.rfind(end)].strip() #get the token out the html
 
     json_clean = json.loads(json_dirty)
 
@@ -102,9 +100,12 @@ def get_product_details():
     p_subcat = jmespath.search("initialData.site.products.get.subCategories[0].name", json_clean)
     p_id = jmespath.search("initialData.site.products.get.articles[0].id", json_clean)
     p_desc = jmespath.search("initialData.site.products.get.articles[0].introductionText", json_clean)
-    p_image = jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[7].url", json_clean)
     p_normalNetPrice, p_offerNetPrice = get_prices(p_id)
+    p_image = jmespath.search("initialData.site.products.get.articles[0].mainImage.sources[7].url", json_clean)
+    if p_image is None:
+      p_image = jmespath.search("initialData.site.products.get.articles[0].studioImages[0].sources[7].url", json_clean)
 
+    logging.info("Getting price of {a} (Normal Net: {b} | Offer Net: {c})".format(a=p_name, b=p_normalNetPrice, c=p_offerNetPrice))
 
     for i in range(len(p_specs_data)):
       if p_specs_data[i].get("formattedValue") is not None:
@@ -128,14 +129,20 @@ def get_product_details():
       "p_offerNetPrice" : p_offerNetPrice,
     })
 
-    logging.info("Getting price of {a} (Normal Net: {b} | Offer Net: {c})".format(a=p_name, b=p_normalNetPrice, c=p_offerNetPrice))
-    img_data = imread(BytesIO(requests.get(p_image).content))
-    img_name = p_id + "-" + p_name.replace(" ", "_") + '.jpg'
-    imsave(f"{image_path}/{img_name}", (img_as_ubyte(rgba2rgb(img_data), (1,1,1))))
-    logging.info("Saving {a} image with name {b}".format(a=p_name, b=img_name))
+    if p_image is not None: save_image(p_id, p_image, p_name)
 
   return product
 
+
+def save_image(p_id, p_image, p_name):
+    image_path = "images/"
+    os.makedirs(image_path, exist_ok=True)
+
+    img_data = imread(BytesIO(requests.get(p_image).content))
+    img_name = p_id + "-" + p_name.replace(" ", "_") + '.jpg'
+    imsave(f"{image_path}/{img_name}", (img_as_ubyte(rgba2rgb(img_data), (1,1,1))))
+
+    logging.info("Saving {a} image with name {b}".format(a=p_name, b=img_name))
 
 def get_categories():
   try:
@@ -196,8 +203,8 @@ def get_prices(id):
   normalPrice = jmespath.search(f"data.site.articles.byIds[0].price.displayPrice.amount", data)
   offerPrice = jmespath.search(f"data.site.articles.byIds[0].campaignPrice.displayPrice.amount", data)
 
-  if normalPrice is not None : normalPrice = np.around(normalPrice / (1+VAT), decimals=2)
-  if offerPrice is not None : offerPrice = np.around(offerPrice / (1+VAT), decimals=2)
+  if normalPrice is not None : normalPrice = np.around(normalPrice / (1+VAT), decimals=1)
+  if offerPrice is not None : offerPrice = np.around(offerPrice / (1+VAT), decimals=1)
 
   return normalPrice, offerPrice
 
@@ -229,8 +236,8 @@ def main(convert):
         'p_id': 'Cod.',
         'p_url': 'Internet',
         'p_desc': 'Note',
-        'p_normalNetPrice': 'Listino 1',
-        'p_offerNetPrice': 'Listino 2',
+        'p_normalNetPrice': 'Listino 4',
+        'p_offerNetPrice': 'Listino 5',
         'p_image': 'Immagine',
       }, inplace=True)
 
