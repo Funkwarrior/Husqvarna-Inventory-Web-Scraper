@@ -62,7 +62,7 @@ headers = {
 VAT = float(0.22)
 danea_codfornitore = "0042"
 danea_produttore = "Husqvarna"
-danea_imagepath = "C:\\Users\\fabio\\Pictures\\HVA\\"
+danea_imagepath = "C:\\Users\\bancone\\Pictures\\HVA\\"
 
 categories = []
 products_links = []

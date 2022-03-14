@@ -1,3 +1,5 @@
 geckodriver.log
 images
 *.xlsx
+.DS_Store
+single_product.xlsx
